@@ -1,16 +1,5 @@
 # Git Tutorial
 
-## Checklist
-
-Do sprawdzenia czy kazda z tych kwestii jest dostatecznie dobrze opisana
-
-- działanie
-- instalacja
-- praca samemu
-- praca w grupach
-- praca na featurach
-- profil github
-
 ## Narzędzia
 
 - VS Code
@@ -166,13 +155,13 @@ git branch feature/wiecej-opcji
 git checkout feature/wiecej-opcji
 ```
 
-3. Zacznij implementacje `feature/wiecej-opcji` zgodnie z kodem poniżej
+4. Zacznij implementacje `feature/wiecej-opcji` zgodnie z kodem poniżej
 
 Zmienia zakres liczb na (1,9) i dodaje kolejny elif "My answers are real"
 
 ![image](https://user-images.githubusercontent.com/9840635/54718996-11d8b500-4b5c-11e9-81f2-1f5fdbbd80f5.png)
 
-3. Zacommituj zmiany na brancha
+5. Zacommituj zmiany na brancha
 
 ```shell
 git add .
@@ -180,13 +169,13 @@ git commit -m "zmienia sposob wyswietlania wiadomosci"
 git push origin feature/wiecej-opcji
 ```
 
-4. Zobacz jak to wyglada w historii za pomocą aliasu, który stworzyliśmy wcześniej.
+6. Zobacz jak to wyglada w historii za pomocą aliasu, który stworzyliśmy wcześniej.
 
 ```shell
 git lg
 ```
 
-5. Wejdz na mastera jako pierwszy (przed Alicją) i zmerguj zmiany
+7. Wejdz na mastera jako pierwszy (przed Alicją) i zmerguj zmiany
 
 ```shell
 git checkout master
@@ -194,9 +183,9 @@ git merge feature/wiecej-opcji
 git push origin master
 ```
 
-6. Pomóż w razie potrzeby swojemu partnerowi/partnerce
+8. Pomóż w razie potrzeby swojemu partnerowi/partnerce
 
-7. Po ukończeniu wszystkiego `git lg` powinien na obu kontach wygladac podobnie do tego
+9. Po ukończeniu wszystkiego `git lg` powinien na obu kontach wygladac podobnie do tego
 
 ![image](https://user-images.githubusercontent.com/9840635/54719877-51080580-4b5e-11e9-837d-a347092ea377.png)
 
@@ -261,6 +250,10 @@ git add .
 git commit -m "Rozwiazuje konflikt"
 git push origin master
 ```
+
+Po ukończeniu wszystkiego `git lg` powinien na obu kontach wygladac podobnie do tego
+
+![image](https://user-images.githubusercontent.com/9840635/54719877-51080580-4b5e-11e9-837d-a347092ea377.png)
 
 ## Followup
 
