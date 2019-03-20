@@ -61,8 +61,8 @@ git config --global user.email "mr.toumash@gmail.com" # adres email z githuba
 
 Workflow ![](https://toolsqa.com/wp-content/gallery/git/Git-Push.png)
 
-Cały proces git (raczej na koniec prezentacji jako podsuwmowanie)
-![proces](https://qph.fs.quoracdn.net/main-qimg-abc66334a6d43a41b14e2e38898c4e8b)
+<!-- Cały proces git (raczej na koniec prezentacji jako podsuwmowanie)
+![proces](https://qph.fs.quoracdn.net/main-qimg-abc66334a6d43a41b14e2e38898c4e8b) -->
 
 ```shell
 mkdir projekt # tworzymy katalog
@@ -148,6 +148,8 @@ Do tego celu musimy się podzielić na pary.
 
 ### Intrukcja dla **Toma**
 
+Dodaj Alice jako kontrybutora.
+
 ![prez1](https://user-images.githubusercontent.com/26259455/54634382-64de3980-4a82-11e9-81bb-a60986d419ca.png)
 
 1. Zforkuj repozytorium klikając Fork w prawym górnym rogu panelu repozytorium
@@ -157,25 +159,25 @@ Do tego celu musimy się podzielić na pary.
 git clone <link z githuba>
 ```
 
-3. Stwórz i przełącz się na nowy branch `feature/lepsze-wyswietlanie`
+3. Stwórz i przełącz się na nowy branch `feature/wiecej-opcji`
 
 ```shell
-git branch feature/lepsze-wyswietlanie
-git checkout feature/lepsze-wyswietlanie
+git branch feature/wiecej-opcji
+git checkout feature/wiecej-opcji
 ```
 
-3. Zacznij implementacje `feature/lepsze-wyswietlanie` zgodnie z kodem poniżej
+3. Zacznij implementacje `feature/wiecej-opcji` zgodnie z kodem poniżej
 
-```python
-print('<b>hehehe</b>') # TODO: alicja
-```
+Zmienia zakres liczb na (1,9) i dodaje kolejny elif "My answers are real"
+
+![image](https://user-images.githubusercontent.com/9840635/54718996-11d8b500-4b5c-11e9-81f2-1f5fdbbd80f5.png)
 
 3. Zacommituj zmiany na brancha
 
 ```shell
 git add .
 git commit -m "zmienia sposob wyswietlania wiadomosci"
-git push origin feature/lepsze-wyswietlanie
+git push origin feature/wiecej-opcji
 ```
 
 4. Zobacz jak to wyglada w historii za pomocą aliasu, który stworzyliśmy wcześniej.
@@ -184,11 +186,24 @@ git push origin feature/lepsze-wyswietlanie
 git lg
 ```
 
+5. Wejdz na mastera jako pierwszy (przed Alicją) i zmerguj zmiany
+
+```shell
+git checkout master
+git merge feature/wiecej-opcji
+git push origin master
+```
+
+6. Pomóż w razie potrzeby swojemu partnerowi/partnerce
+
+7. Po ukończeniu wszystkiego `git lg` powinien na obu kontach wygladac podobnie do tego
+
+![image](https://user-images.githubusercontent.com/9840635/54719877-51080580-4b5e-11e9-837d-a347092ea377.png)
+
 ## Kolaboracja w dwie osoby - konflikt i rozwiazanie (VS Code albo coś innego)
 
 Tom zmienia zakres liczb na (1,9) i dodaje kolejny elif "My answers are real"
-
-## Kolaboracja w dwie osoby - jedna robi pull requesta a druga review
+Alice zmienia zakres liczb na (1,9) i dodaje kolejny elif "My answers are not of any importance"
 
 ### Instrukcja dla **Alice**
 
@@ -200,22 +215,52 @@ Następnie w konsoli wejdź do wybranego folderu, gdzie chcesz umieścić to rep
 
 ![prezi4](https://user-images.githubusercontent.com/26259455/54635395-55f88680-4a84-11e9-8e4b-6de0a17a97f4.png)
 
+Teraz będziemy robić konflikt.
+
 Utwórz nowy branch, na którym będziesz pracować.
 
-git branch feature/nowa-cecha
-git checkout feature/nowa-cecha
+```shell
+git branch feature/nowa-opcja
+git checkout feature/nowa-opcja
+```
 
-![prezi6](https://user-images.githubusercontent.com/26259455/54636810-82fa6880-4a87-11e9-96f6-e2b0afd2b184.png)
-
-Teraz będziemy robić konflikt. Otwórz plik magic-ifs.py w VS Code.
-Aliss zmienia zakres liczb na (1,9) i dodaje kolejny elif "My answers are not of any importance"
+Otwórz plik magic-ifs.py dowolnym edytorze. Dodaj zakres liczb na (1,9) i dodaje kolejny elif "My answers are not of any importance"
 
 ![prezi7](https://user-images.githubusercontent.com/26259455/54637015-fbf9c000-4a87-11e9-9193-0ba21dc03e7a.png)
 
 Kod ma wyglądać jak wyżej.
 
-git commit -m "Dodaje nowa opcje"
-git push origin nowa-cecha ?
+Następnie wracamy do konsoli i wpisujemy:
+
+![prezi8](https://user-images.githubusercontent.com/26259455/54715477-ddf99180-4b53-11e9-873b-3b2e0d05af3c.png)
+
+A następnie
+
+```shell
+git push origin feature/nowa-opcja
+```
+
+Jeżeli druga osoba zrobiła commit brancha i merge to powinien powstać konflikt jak poniżej
+
+![prezi10](https://user-images.githubusercontent.com/26259455/54719220-9fb4a000-4b5c-11e9-8112-0fcd689befa6.png)
+
+aby otworzyc VS Code
+
+```shell
+code .
+```
+
+Wybierz opcję Accept Both Changes i zmien jak ponizej
+
+![image](https://user-images.githubusercontent.com/26259455/54719668-c1625700-4b5d-11e9-8778-b900f0d9776c.png)
+
+I ponownie w konsoli
+
+```shell
+git add .
+git commit -m "Rozwiazuje konflikt"
+git push origin master
+```
 
 ## Followup
 
