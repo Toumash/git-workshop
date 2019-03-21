@@ -138,6 +138,15 @@ Do tego celu musimy się podzielić na pary.
 ### Intrukcja dla **Toma**
 
 Dodaj Alice jako kontrybutora.
+Jak dodać kontrybutora? Ilustracja poniżej
+
+Repozytorium, które chcemy współdzielić -> Settings -> Collaborators -> wpisanie loginu osoby, którą chcemy dodać
+-> Add Collaborator -> Druga osoba musi poprzez e-maila potwierdzić kolaborację
+
+![image](https://user-images.githubusercontent.com/26259455/54761520-8827f680-4bf2-11e9-944f-05b52e22c17e.png)
+
+![image](https://user-images.githubusercontent.com/26259455/54761640-c0c7d000-4bf2-11e9-9680-91077d910820.png)
+
 
 ![prez1](https://user-images.githubusercontent.com/26259455/54634382-64de3980-4a82-11e9-81bb-a60986d419ca.png)
 
