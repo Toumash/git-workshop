@@ -213,7 +213,8 @@ Znajdź konto Toma na githubie i zrób clone jego sforkowanego repozytorium git-
 
 ![prezi5](https://user-images.githubusercontent.com/26259455/54635590-ce5f4780-4a84-11e9-9025-4333b97f3c76.png)
 
-Następnie w konsoli wejdź do wybranego folderu, gdzie chcesz umieścić to repozytorium i wpisz komendę git clone razem ze skopiowanym linkiem
+Następnie w konsoli wejdź do wybranego folderu, gdzie chcesz umieścić to repozytorium i wpisz komendę git clone razem ze skopiowanym  UWAGA TO MA BYĆ LINK Z REPOZYTORIUM OSOBY OBOK, KTÓRA WCZEŚNIEJ SFORKOWAŁA KOD Z DATA-SCIENCE-PG, 
+NIE SUGEROWAĆ SIĘ TYM ŻE W KONSOLI JEST LINK Z DATA-SCIENCE-PG !
 
 ![prezi4](https://user-images.githubusercontent.com/26259455/54635395-55f88680-4a84-11e9-8e4b-6de0a17a97f4.png)
 
