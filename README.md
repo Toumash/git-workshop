@@ -19,6 +19,10 @@ Git - rozproszony system kontroli wersji zapoczątkowany przez Linusa Trovalda (
 
 ### Jak działa git?
 
+![image](https://user-images.githubusercontent.com/26259455/54762635-c0c8cf80-4bf4-11e9-8456-f11387bf4ae5.png)
+
+ze strony https://git-scm.com/book/en/v1/Getting-Started-Git-Basics
+
 ### Dystrybuowany? Że co?
 
 Praca offline!
